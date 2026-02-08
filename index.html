@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Monty Hall Simulation</title>
+</head>
+
+<body>
+  <h1>モンティホール問題 シミュレーター</h1>
+  <input type="number" id="times" value="1000" min="1" max="10000">
+  <button id="run">1000回シミュレーション</button>
+
+  <pre id="result"></pre>
+
+  <script src="main.js"></script>
+  
+  <section id="about">
+    <h2>モンティホール問題とは？</h2>
+
+    <p>
+      モンティホール問題は、アメリカのテレビ番組を元にした有名な確率問題です。
+      3つの扉のうち1つに当たり（車）があり、残り2つはハズレです。
+    </p>
+
+    <p>
+        プレイヤー（あなた）が1つ選ぶと、司会者がハズレのドアを1枚だけ開けます。
+        そしてこう聞いてきます。
+      </p>
+    
+      <p>
+        <strong>「……選び直しますか？」</strong>
+      </p>
+    
+      <p>
+        直感だと「どっちでも同じでしょ？」と思いがちですが、
+        <strong>変更した方が約2/3の確率で当たります。</strong>
+        このシミュレーターは、その事実を
+        <strong>理屈ではなく、試行回数の暴力で証明する装置</strong>です。
+        どうぞ何万回でも殴ってください。
+      </p>
+  </section>
+
+</body>
+<style>
+    body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3f6fb;
+  color: #222;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+}
+
+input, button {
+  padding: 8px 12px;
+  font-size: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#about {
+  margin-top: 60px;
+  padding: 28px 32px;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 720px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+#about h2 {
+  margin-bottom: 14px;
+}
+
+#about p {
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+  </style>
+</html>
